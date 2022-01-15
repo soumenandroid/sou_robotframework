@@ -1,0 +1,21 @@
+{
+  "Environment": [
+    {
+      "execution": "QA"
+    }
+  ],
+  "QA": [
+    {
+      "url": "https://www.google.com",
+      "user": "john",
+      "dbconnection": "qadbconnection"
+    }
+  ],
+  "Stage": [
+    {
+      "url": "https://www.yahoo.com",
+      "user": "max",
+      "dbconnection": "stagedbconnection"
+    }
+  ]
+}

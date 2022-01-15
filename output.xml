@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.8.10 on linux)" generated="20220115 13:15:24.006" rpa="false" schemaversion="2">
+<suite id="s1" name="First" source="/home/soumen/PycharmProjects/pythonProject_selenium/Tests/first.robot">
+<test id="s1-t1" name="foo">
+<kw name="Open website custom" library="Keywords">
+<arg>${APP1_URL}</arg>
+<arg>${BROWSER}</arg>
+<kw name="Create Webdriver" library="Selenium2Library">
+<arg>${BROWSER}</arg>
+<arg>executable_path=${driverpath}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220115 13:15:24.098" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220115 13:15:24.097" endtime="20220115 13:15:35.965"/>
+</kw>
+<kw name="Get Webdriver Instance" library="CustomLibrary">
+<var>${driver}</var>
+<msg timestamp="20220115 13:15:35.966" level="INFO">I am driver &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="86df4a5c7a8d922bb41f12009f7d02bb")&gt;</msg>
+<msg timestamp="20220115 13:15:35.966" level="INFO">${driver} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="86df4a5c7a8d922bb41f12009f7d02bb")&gt;</msg>
+<status status="PASS" starttime="20220115 13:15:35.965" endtime="20220115 13:15:35.966"/>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<arg>${APP1_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220115 13:15:35.967" level="INFO">Opening url 'https://www.google.com/'</msg>
+<status status="PASS" starttime="20220115 13:15:35.966" endtime="20220115 13:15:38.783"/>
+</kw>
+<status status="PASS" starttime="20220115 13:15:24.097" endtime="20220115 13:15:38.783"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//input[@name='q']</arg>
+<arg>makemytrip</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220115 13:15:38.785" level="INFO">Typing text 'makemytrip' into text field '//input[@name='q']'.</msg>
+<status status="PASS" starttime="20220115 13:15:38.784" endtime="20220115 13:15:39.102"/>
+</kw>
+<status status="PASS" starttime="20220115 13:15:24.097" endtime="20220115 13:15:39.102"/>
+</test>
+<status status="PASS" starttime="20220115 13:15:24.006" endtime="20220115 13:15:39.103"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="First">First</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
