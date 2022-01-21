@@ -1,8 +1,9 @@
 *** Settings ***
 Library     Selenium2Library
 Library    OperatingSystem
-Library    ../Tests/CustomLibrary.py
-Resource    ../Resources/config_param.robot
+Library     ../Utilities_pkg/CustomLibrary.py
+Resource    ../config_param.robot
+Library     ../Utilities_pkg/WebDriverManager.py
 
 
 *** Keywords ***

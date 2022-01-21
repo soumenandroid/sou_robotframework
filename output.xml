@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.8.10 on linux)" generated="20220115 13:15:24.006" rpa="false" schemaversion="2">
-<suite id="s1" name="First" source="/home/soumen/PycharmProjects/pythonProject_selenium/Tests/first.robot">
+<robot generator="Robot 4.1.2 (Python 3.8.10 on linux)" generated="20220120 17:35:35.754" rpa="false" schemaversion="2">
+<suite id="s1" name="Testcses Custom Sel" source="/home/soumen/PycharmProjects/pythonProject_selenium/Tests/testcses_custom_sel.robot">
 <test id="s1-t1" name="foo">
 <kw name="Open website custom" library="Keywords">
 <arg>${APP1_URL}</arg>
@@ -9,42 +9,77 @@
 <arg>${BROWSER}</arg>
 <arg>executable_path=${driverpath}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20220115 13:15:24.098" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20220115 13:15:24.097" endtime="20220115 13:15:35.965"/>
+<msg timestamp="20220120 17:35:35.876" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220120 17:35:35.875" endtime="20220120 17:35:40.388"/>
 </kw>
 <kw name="Get Webdriver Instance" library="CustomLibrary">
 <var>${driver}</var>
-<msg timestamp="20220115 13:15:35.966" level="INFO">I am driver &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="86df4a5c7a8d922bb41f12009f7d02bb")&gt;</msg>
-<msg timestamp="20220115 13:15:35.966" level="INFO">${driver} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="86df4a5c7a8d922bb41f12009f7d02bb")&gt;</msg>
-<status status="PASS" starttime="20220115 13:15:35.965" endtime="20220115 13:15:35.966"/>
+<msg timestamp="20220120 17:35:40.389" level="INFO">I am driver &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="00bb0502af696d49a413ed8bf28a45a1")&gt;</msg>
+<msg timestamp="20220120 17:35:40.389" level="INFO">${driver} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="00bb0502af696d49a413ed8bf28a45a1")&gt;</msg>
+<status status="PASS" starttime="20220120 17:35:40.388" endtime="20220120 17:35:40.389"/>
 </kw>
 <kw name="Go To" library="Selenium2Library">
 <arg>${APP1_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220115 13:15:35.967" level="INFO">Opening url 'https://www.google.com/'</msg>
-<status status="PASS" starttime="20220115 13:15:35.966" endtime="20220115 13:15:38.783"/>
+<msg timestamp="20220120 17:35:40.390" level="INFO">Opening url 'https://www.google.com/'</msg>
+<status status="PASS" starttime="20220120 17:35:40.389" endtime="20220120 17:35:43.393"/>
 </kw>
-<status status="PASS" starttime="20220115 13:15:24.097" endtime="20220115 13:15:38.783"/>
+<status status="PASS" starttime="20220120 17:35:35.875" endtime="20220120 17:35:43.393"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>//input[@name='q']</arg>
 <arg>makemytrip</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220115 13:15:38.785" level="INFO">Typing text 'makemytrip' into text field '//input[@name='q']'.</msg>
-<status status="PASS" starttime="20220115 13:15:38.784" endtime="20220115 13:15:39.102"/>
+<msg timestamp="20220120 17:35:43.394" level="INFO">Typing text 'makemytrip' into text field '//input[@name='q']'.</msg>
+<status status="PASS" starttime="20220120 17:35:43.393" endtime="20220120 17:35:43.585"/>
 </kw>
-<status status="PASS" starttime="20220115 13:15:24.097" endtime="20220115 13:15:39.102"/>
+<status status="PASS" starttime="20220120 17:35:35.874" endtime="20220120 17:35:43.586"/>
 </test>
-<status status="PASS" starttime="20220115 13:15:24.006" endtime="20220115 13:15:39.103"/>
+<test id="s1-t2" name="foo1">
+<kw name="Open website custom" library="Keywords">
+<arg>$APP1_URL</arg>
+<arg>$BROWSER</arg>
+<kw name="Create Webdriver" library="Selenium2Library">
+<arg>${BROWSER}</arg>
+<arg>executable_path=${driverpath}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220120 17:35:43.941" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220120 17:35:43.587" endtime="20220120 17:35:43.941"/>
+</kw>
+<msg timestamp="20220120 17:35:43.956" level="FAIL">'$BROWSER' is not a valid WebDriver name.</msg>
+<status status="FAIL" starttime="20220120 17:35:43.586" endtime="20220120 17:35:43.956"/>
+</kw>
+<kw name="Get Webdriver Instance" library="CustomLibrary">
+<var>${driver}</var>
+<status status="NOT RUN" starttime="20220120 17:35:43.957" endtime="20220120 17:35:43.957"/>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<arg>${APP1_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20220120 17:35:43.957" endtime="20220120 17:35:43.957"/>
+</kw>
+<status status="FAIL" starttime="20220120 17:35:43.586" endtime="20220120 17:35:43.957"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//input[@name='q']</arg>
+<arg>goidibo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220120 17:35:43.957" endtime="20220120 17:35:43.957"/>
+</kw>
+<status status="FAIL" starttime="20220120 17:35:43.586" endtime="20220120 17:35:43.957">'$BROWSER' is not a valid WebDriver name.</status>
+</test>
+<status status="FAIL" starttime="20220120 17:35:35.755" endtime="20220120 17:35:43.958"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="First">First</stat>
+<stat pass="1" fail="1" skip="0" id="s1" name="Testcses Custom Sel">Testcses Custom Sel</stat>
 </suite>
 </statistics>
 <errors>

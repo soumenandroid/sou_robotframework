@@ -5,4 +5,4 @@ Library     Selenium2Library
 ${txt_fromcity} =   //input[@placeholder='From']
 ${btnlogin} =   //li[@data-cy='account']
 
-*** Keywords ***
+

@@ -13,15 +13,6 @@ def get_webdriver_instance():
     return se2lib.driver
 
 
-def get_web_driver(url, driver):
-    print("I am driver", driver)
-    if driver == "Chrome":
-        driver = webdriver.Chrome("/home/soumen/software/chromedriver/chromedriver")
-        driver.get(url)
-    elif driver == "Firefox":
-        driver = webdriver.firefox("/home/soumen/software/geckodriver")
-    #    return driver
-
 def search_for_hotels_draft():
     get_webdriver_instance().find_element("//a[contains(@class,'widgetSearchBtn')]").click()
 

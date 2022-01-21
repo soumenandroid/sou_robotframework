@@ -1,19 +1,9 @@
 *** Settings ***
 Library     Selenium2Library
 Library    OperatingSystem
-Library     ../Library/CommonLibrary.py
-Library     ../Tests/CustomLibrary.py
-Resource    ../Resources/Pages/firstpage.robot
-Resource    ../Resources/config_param.robot
-Resource    ../Resources/Keywords.robot
 
 *** Variables ***
 ${searchtext}   "makemyterip"
-
-*** Test Cases ***
-foo
-      Open website custom  ${APP1_URL}   ${BROWSER}
-      Input Text      //input[@name='q']      makemytrip
 
 *** Test Cases ***
 Makemy trip flight search

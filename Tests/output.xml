@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.8.10 on linux)" generated="20220116 21:40:30.512" rpa="false" schemaversion="2">
+<suite id="s1" name="Testcses Custom Sel" source="/home/soumen/PycharmProjects/pythonProject_selenium/Tests/testcses_custom_sel.robot">
+<test id="s1-t1" name="foo">
+<kw name="Open website custom" library="Keywords">
+<arg>${APP1_URL}</arg>
+<arg>${BROWSER}</arg>
+<kw name="Create Webdriver" library="Selenium2Library">
+<arg>${BROWSER}</arg>
+<arg>executable_path=${driverpath}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220116 21:40:30.599" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220116 21:40:30.598" endtime="20220116 21:40:31.321"/>
+</kw>
+<kw name="Get Webdriver Instance">
+<var>${driver}=</var>
+<msg timestamp="20220116 21:40:31.325" level="FAIL">No keyword with name 'Get Webdriver Instance' found.</msg>
+<status status="FAIL" starttime="20220116 21:40:31.325" endtime="20220116 21:40:31.325"/>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<arg>${APP1_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20220116 21:40:31.325" endtime="20220116 21:40:31.326"/>
+</kw>
+<status status="FAIL" starttime="20220116 21:40:30.598" endtime="20220116 21:40:31.326"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//input[@name='q']</arg>
+<arg>makemytrip</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220116 21:40:31.326" endtime="20220116 21:40:31.326"/>
+</kw>
+<status status="FAIL" starttime="20220116 21:40:30.598" endtime="20220116 21:40:31.327">No keyword with name 'Get Webdriver Instance' found.</status>
+</test>
+<test id="s1-t2" name="foo1">
+<kw name="Open website custom" library="Keywords">
+<arg>$APP1_URL</arg>
+<arg>$BROWSER</arg>
+<kw name="Create Webdriver" library="Selenium2Library">
+<arg>${BROWSER}</arg>
+<arg>executable_path=${driverpath}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220116 21:40:31.460" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220116 21:40:31.328" endtime="20220116 21:40:31.460"/>
+</kw>
+<msg timestamp="20220116 21:40:31.461" level="FAIL">'$BROWSER' is not a valid WebDriver name.</msg>
+<status status="FAIL" starttime="20220116 21:40:31.327" endtime="20220116 21:40:31.461"/>
+</kw>
+<kw name="Get Webdriver Instance">
+<var>${driver}=</var>
+<status status="NOT RUN" starttime="20220116 21:40:31.464" endtime="20220116 21:40:31.464"/>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<arg>${APP1_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20220116 21:40:31.464" endtime="20220116 21:40:31.464"/>
+</kw>
+<status status="FAIL" starttime="20220116 21:40:31.327" endtime="20220116 21:40:31.465"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//input[@name='q']</arg>
+<arg>goidibo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220116 21:40:31.466" endtime="20220116 21:40:31.466"/>
+</kw>
+<status status="FAIL" starttime="20220116 21:40:31.327" endtime="20220116 21:40:31.466">'$BROWSER' is not a valid WebDriver name.</status>
+</test>
+<status status="FAIL" starttime="20220116 21:40:30.513" endtime="20220116 21:40:31.467"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Testcses Custom Sel">Testcses Custom Sel</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220116 21:40:30.597" level="ERROR">Error in file '/home/soumen/PycharmProjects/pythonProject_selenium/Resources/Keywords_Repo/Keywords.robot' on line 4: Test library 'Utilities.CustomLibrary.py' does not exist.</msg>
+<msg timestamp="20220116 21:40:30.597" level="ERROR">Error in file '/home/soumen/PycharmProjects/pythonProject_selenium/Resources/Keywords_Repo/Keywords.robot' on line 5: Resource file '../Resources/config_param.robot' does not exist.</msg>
+<msg timestamp="20220116 21:40:30.597" level="ERROR">Error in file '/home/soumen/PycharmProjects/pythonProject_selenium/Resources/Keywords_Repo/Keywords.robot' on line 6: Test library 'Utilities/WebDriverManager.py' does not exist.</msg>
+</errors>
+</robot>
